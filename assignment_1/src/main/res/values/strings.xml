@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">Assignment_1</string>
+    <string name="app_name">Yoda Says</string>
 <string name="yodaSays">Yoda Says....</string>
+    <string name="prev_button">Previous</string>
+    <string name="new_button">Next</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string-array
@@ -9,10 +11,14 @@
         <item>@string/quotes_2</item>
         <item>@string/quotes_3</item>
         <item>@string/quotes_4</item>
+        <item>@string/quotes_5</item>
+        <item>@string/quotes_6</item>
     </string-array>
     <string name="quotes_1">\"When nine hundred years old you reach, look as good you will not.\"</string>
     <string name="quotes_2">\"Truly wonderful, the mind of a child is.\"</string>
     <string name="quotes_3">\"Fear is the path to the dark side…fear leads to anger…anger leads to hate…hate leads to suffering.\"</string>
     <string name="quotes_4">\"Do. Or do not. There is no try.\"</string>
+    <string name="quotes_5">\"The dark side clouds everything. Impossible to see, the future is.\"</string>
+    <string name="quotes_6">\"Yes. A Jedi\'s strength flows from the Force. But beware of the dark side.\"</string>
 <string name="button_string">Next Quote</string>
     </resources>
