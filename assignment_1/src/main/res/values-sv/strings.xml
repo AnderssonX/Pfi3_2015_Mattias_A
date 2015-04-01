@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Yoda Says</string>
+    <string name="action_settings">Inställningar</string>
+    <string name="button_string">Nästa Citat</string>
+    <string name="hello_world">Hej världen!</string>
+    <string name="new_button">Nästa</string>
+    <string name="prev_button">Föregående</string>
+    <string name="quotes_1">\"When nine hundred years old you reach, look as good you will not.\"</string>
+</resources>
