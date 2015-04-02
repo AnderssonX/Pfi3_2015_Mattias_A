@@ -26,6 +26,36 @@ int prevQuote=6;
     // create a mediaplayer
 MediaPlayer mySound;
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("Destroy", "Program forced shut down");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("Stop", "Program stopped");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    Log.i("Pause", "Program paused");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    Log.i("Resume", "Program resumed");
+    }
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    Log.i("Start", "Program started, yay!");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +63,7 @@ MediaPlayer mySound;
         setContentView(R.layout.activity_main);
         mySound = MediaPlayer.create(this, R.raw.lightsaber);
         mySound.start();
+        Log.i("Create", "Program created");
     }
 
 
