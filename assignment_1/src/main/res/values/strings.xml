@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Yoda Says</string>
-<string name="yodaSays">Yoda Says....</string>
+<string name="yodaSays">Yoda says....</string>
     <string name="prev_button">Previous</string>
     <string name="new_button">Next</string>
     <string name="hello_world">Hello world!</string>
