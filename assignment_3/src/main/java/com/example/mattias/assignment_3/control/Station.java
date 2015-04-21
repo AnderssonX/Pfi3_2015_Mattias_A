@@ -1,4 +1,4 @@
-package com.example.mattias.assignment_3;
+package com.example.mattias.assignment_3.control;
 
 /**
  * Contains all information for an individual station

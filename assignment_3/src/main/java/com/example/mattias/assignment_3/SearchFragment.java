@@ -13,13 +13,18 @@ import android.widget.AdapterView;
 import android.widget.ExpandableListView;
 import android.widget.Spinner;
 
+import com.example.mattias.assignment_3.control.Constants;
+import com.example.mattias.assignment_3.control.Journey;
+import com.example.mattias.assignment_3.control.Journeys;
+import com.example.mattias.assignment_3.control.Parser;
+
 import java.util.ArrayList;
 
 // changed stuff!!!!
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Travels extends Fragment implements AdapterView.OnItemSelectedListener {
+public class SearchFragment extends Fragment implements AdapterView.OnItemSelectedListener {
     private Spinner spinnerFrom;
     private Spinner spinnerTo;
 private String searchURL;
@@ -27,7 +32,7 @@ private String searchURL;
     private ArrayList<Journey> myItems = new ArrayList<Journey>();
     private Adapter myAdapter;
 
-    public Travels() {
+    public SearchFragment() {
         // Required empty public constructor
     }
 
@@ -111,7 +116,7 @@ private String searchURL;
         int toSTation = spinnerTo.getSelectedItemPosition();
         //String searchURL = Constants.getURL("80000", "93070", 10); //Malmö C = 80000,  Malmö GAtorg 80100, Hässleholm C 93070
         String[] stationNo = getResources().getStringArray(R.array.stationNumbers);
-        String searchURL = Constants.getURL( stationNo[fromStation], stationNo[toSTation], 14);
+        String searchURL = Constants.getURL(stationNo[fromStation], stationNo[toSTation], 14);
         new MyAsyncTask().execute(searchURL);
         // FROM ONCREATE!
 

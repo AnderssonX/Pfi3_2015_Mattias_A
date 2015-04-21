@@ -19,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
 
         android.app.FragmentManager fm = getFragmentManager();
         android.app.FragmentTransaction ft = fm.beginTransaction();
-        Travels t = new Travels();
+        SearchFragment t = new SearchFragment();
         ft.replace(R.id.container,t);
         ft.commit();
     }

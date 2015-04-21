@@ -8,6 +8,8 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.mattias.assignment_3.control.Journey;
+
 import java.util.ArrayList;
 
 
