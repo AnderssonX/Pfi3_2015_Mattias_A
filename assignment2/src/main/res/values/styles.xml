@@ -18,6 +18,8 @@
     <style name="MyActionBar"
         parent="@style/Widget.AppCompat.ActionBar">
         <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+
+        <!-- Custom gradient for action bar, gradient.xml in drawable. -->
         <item name="android:background">@drawable/gradient</item>
         <item name="android:backgroundStacked">@drawable/gradient</item>
         <item name="android:backgroundSplit">@drawable/gradient</item>

@@ -1,29 +1,19 @@
-package com.example.mattias.assignment2;
+package com.example.mattias.assignment3;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MainActivity extends ActionBarActivity{
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // Skapa fragmentmanager
-        FragmentManager fm = getFragmentManager();
-        // skapa fragmenttransaction
-        FragmentTransaction ft = fm.beginTransaction();
-BlankFragment bf = new BlankFragment();
-        // byt till BlankFragment
-        ft.replace(R.id.start_layout,bf);
-        ft.commit();
-
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,4 +36,4 @@ BlankFragment bf = new BlankFragment();
 
         return super.onOptionsItemSelected(item);
     }
-    }
+}

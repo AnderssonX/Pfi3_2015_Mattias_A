@@ -1,13 +1,15 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:id="@+id/scrollviewz">
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="2dp"
 
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.example.mattias.assignment2.Fragment2"
+    android:layout_height="match_parent" tools:context="com.example.mattias.assignment_3.Fragment2"
 
     android:background="#ffffffff">
 
@@ -18,7 +20,7 @@
         android:id="@+id/from"
         android:hint="Från"
         android:textIsSelectable="false"
-        android:textSize="16sp" />
+        android:textSize="16sp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
