@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.mattias.assignment_3.Travels"
+    android:background="#ffffffff"
     >
 
     <LinearLayout
@@ -52,11 +53,33 @@
             android:layout_marginRight="7dip"
             android:paddingTop="5dp"
             android:paddingBottom="5dp" />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Booya!"
-            android:id="@+id/boo"/>
+            android:text="Avgår om"
+            android:id="@+id/boo"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold" />
+    <TextView
+        android:paddingLeft="4dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Avvikelse finns"
+        android:id="@+id/leavesIn"
+        android:layout_weight="1"
+        android:textStyle="bold"
+android:paddingBottom="15dp"
+        />
+
+</LinearLayout>
 
         <ExpandableListView
             android:layout_width="fill_parent"
@@ -66,6 +89,7 @@
             android:groupIndicator="@null"
             android:divider="@android:color/darker_gray"
             android:dividerHeight="@dimen/customDivider" />
+
 
     </LinearLayout>
 

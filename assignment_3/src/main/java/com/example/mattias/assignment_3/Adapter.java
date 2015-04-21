@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -14,6 +15,8 @@ public class Adapter extends BaseExpandableListAdapter {
 
     private ArrayList<Journey> j;
     private Context c;
+    private String arrival;
+    private String anyDeviation;
 
     public Adapter (Context c, ArrayList<Journey> j){
         this.j = j;
@@ -33,14 +36,28 @@ public class Adapter extends BaseExpandableListAdapter {
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         LayoutInflater li = (LayoutInflater) this.c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        convertView = li.inflate(R.layout.list_collapsed,null);
+        convertView = li.inflate(R.layout.list_collapsed, null);
 
-        TextView arrTime = (TextView) convertView.findViewById(R.id.travelMinutes);
-        String arrival = j.get(groupPosition).getTravelMinutes().toString();
-        arrTime.setText(arrival);
+        ImageView arrTime = (ImageView) convertView.findViewById(R.id.travelMinutes);
+        //String arrival = j.get(groupPosition).getTimeToDeparture();
+        if (j.get(groupPosition).getDepTimeDeviation() == "") {
+            arrival = " ";
+            anyDeviation = "";
+
+        } else {
+            arrival = "Avvikelse finns";
+            anyDeviation = "\n \n Avvikelse:\n"+j.get(groupPosition).getDepTimeDeviation()+" min\n \n";
+            arrTime.setImageResource(R.drawable.error);
+        }
+
+        // USE ONLY WITH TEXTVIEW -> arrTime.setText(arrival);
+
 
         TextView depTime = (TextView) convertView.findViewById(R.id.depTimeDev);
-        String departure = j.get(groupPosition).getDepTimeDeviation().toString();
+        // String departure = "Depature: " +j.get(groupPosition).getDepTimeDeviation().toString();
+        // depTime.setText(departure);
+
+        String departure = j.get(groupPosition).getTimeToDeparture().toString() + " minuter";
         depTime.setText(departure);
 
 
@@ -52,12 +69,12 @@ public class Adapter extends BaseExpandableListAdapter {
         LayoutInflater li = (LayoutInflater) this.c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         convertView = li.inflate(R.layout.list_expanded,null);
 
-        TextView arrTime = (TextView) convertView.findViewById(R.id.travelMinutes);
-        String arrival = j.get(groupPosition).getTravelMinutes().toString();
+        TextView arrTime = (TextView) convertView.findViewById(R.id.arrTime);
+        String arrival = "Restid: \n" + j.get(groupPosition).getTravelMinutes().toString()+anyDeviation;
         arrTime.setText(arrival);
 
-        TextView depTime = (TextView) convertView.findViewById(R.id.depTimeDev);
-        String departure = j.get(groupPosition).getDepTimeDeviation().toString();
+        TextView depTime = (TextView) convertView.findViewById(R.id.depTime);
+        String departure = "Typ: \n"+ j.get(groupPosition).getLineOnFirstJourney().toString();
         depTime.setText(departure);
 
         return convertView;

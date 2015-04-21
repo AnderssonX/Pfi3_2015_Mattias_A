@@ -1,5 +1,7 @@
 package com.example.mattias.assignment_3;
 
+import android.util.Log;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -50,6 +52,7 @@ public class Parser {
      * @return a Jourenys object that contains information on journeys from a station to another specified station.
      * */
     public static Journeys getJourneys(String searchURL){
+        Log.i("isak", searchURL);
         Journeys journeys = new Journeys();
         XMLParser parser = new XMLParser();
         Station toStation;
