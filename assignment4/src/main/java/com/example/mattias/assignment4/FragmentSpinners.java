@@ -27,7 +27,7 @@ public class FragmentSpinners extends Fragment implements AdapterView.OnItemSele
         Spinner spinner2 = (Spinner)v.findViewById(R.id.spinner_other_book_names);
         ArrayAdapter<Planet> bookAdapter = new ArrayAdapter<Planet>(this.getActivity(),
                 android.R.layout.simple_spinner_dropdown_item,
-                FragmentList.books);
+                FragmentList.planets);
         spinner2.setAdapter(bookAdapter);
         spinner2.setOnItemSelectedListener(this);
         return v;
@@ -43,8 +43,8 @@ public class FragmentSpinners extends Fragment implements AdapterView.OnItemSele
 
         if (parent.getId()==R.id.spinner_other_book_names){
             String[] isbn_numbers = getResources().getStringArray(R.array.books_isbn);
-            Log.i("FragmentWithSpinners","Selected position:  "+position+" with title " +  FragmentList.books.get(position).getName());
-            Toast.makeText(this.getActivity(),"Selected position:  "+position+" with title " +  FragmentList.books.get(position).getName(),Toast.LENGTH_LONG).show();
+            Log.i("FragmentWithSpinners","Selected position:  "+position+" with title " +  FragmentList.planets.get(position).getName());
+            Toast.makeText(this.getActivity(),"Selected position:  "+position+" with title " +  FragmentList.planets.get(position).getName(),Toast.LENGTH_LONG).show();
         }
     }
 
