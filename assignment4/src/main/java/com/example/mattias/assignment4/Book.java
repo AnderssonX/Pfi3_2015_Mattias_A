@@ -8,46 +8,58 @@ import java.io.Serializable;
  * Created by Mattias on 15-04-22.
  */
 public class Book implements Serializable {
-    String title;
-    String isbn;
+    String name;
+    String radie;
+    String medeltemp;
+    String info;
     Drawable image;
 
-    public Book(String title, String isbn, Drawable image) {
-        this.title = title;
-        this.isbn = isbn;
+    public Book(String name, String info, String radie, String medeltemp, Drawable image) {
+        this.name = name;
+        this.info = info;
+        this.radie = radie;
+        this.medeltemp = medeltemp;
         this.image = image;
     }
 
-    public String getIsbn() {
-        return isbn;
+    public String getInfo() {
+        return info;
     }
 
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
+    public void setInfo(String isbn) {
+        this.info = isbn;
     }
 
     public Drawable getImage() {
         return image;
     }
 
-    public void setImage(Drawable image) {
+    public void setName(Drawable image) {
         this.image = image;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public String getMedeltemp() {
+        return medeltemp;
+    }
+
+    public String getRadie() {
+        return radie;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
     public String toString() {
-        return title;
+        return name;
     }
 
     public String getSummary() {
-        return "Det är ett välkänt faktum att läsare distraheras av läsbar text på en sida när man skall studera layouten. Poängen med Lorem Ipsum är att det ger ett normalt ordflöde, till skillnad från \"Text här, Text här\", och ger intryck av att vara läsbar text. Många publiseringprogram och webbutvecklare använder Lorem Ipsum som test-text, och en sökning efter \"Lorem Ipsum\" avslöjar många webbsidor under uteckling. Olika versioner har dykt upp under åren, ibland av olyckshändelse, ibland med flit (mer eller mindre humoristiska).";
+        return "Radie: "+radie+"\n"+"Medeltemp: "+medeltemp;
     }
 }

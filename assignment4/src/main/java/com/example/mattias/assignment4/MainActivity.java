@@ -42,6 +42,28 @@ public class MainActivity extends ActionBarActivity {
 
         if (id == R.id.action_spinner) {
             FragmentManager fm = getFragmentManager();
+            FragmentInfoDialog fd = new FragmentInfoDialog();
+            // Bundle b = new Bundle();
+            // b.putSerializable("book", books.get(position));
+            // fd.setArguments(b);
+            fd.show(fm, "Dialog");
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        setContentView(R.layout.activity_main);
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.main_layout, new FragmentList());
+        ft.commit();
+    }
+}
+
+
+         /*    FragmentManager fm = getFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.replace(R.id.main_layout,new FragmentSpinners());
             ft.addToBackStack(null);
@@ -52,3 +74,5 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
+         */

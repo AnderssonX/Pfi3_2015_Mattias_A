@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffcc9752"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffcc5c4b">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/textViewNamn"
+        android:layout_weight="0.9"
+
+        android:textSize="18sp" />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+android:layout_gravity="right"
+    android:src="@drawable/mars"
+    android:id="@+id/planetImage"
+    android:layout_weight="0.1"/>
+</LinearLayout>
+
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="#ffcc5c4b">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:text="Stats"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStats"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:text="Info"
+        android:layout_height="fill_parent"
+        android:paddingTop="8dp"
+        android:id="@+id/textViewInfo"/>
+</LinearLayout>
+    </LinearLayout>
