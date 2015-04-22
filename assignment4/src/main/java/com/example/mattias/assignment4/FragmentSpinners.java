@@ -25,7 +25,7 @@ public class FragmentSpinners extends Fragment implements AdapterView.OnItemSele
         Spinner spinner = (Spinner)v.findViewById(R.id.spinner_book_names);
         spinner.setOnItemSelectedListener(this); //This class implements OnItemSelectedListenr
         Spinner spinner2 = (Spinner)v.findViewById(R.id.spinner_other_book_names);
-        ArrayAdapter<Book> bookAdapter = new ArrayAdapter<Book>(this.getActivity(),
+        ArrayAdapter<Planet> bookAdapter = new ArrayAdapter<Planet>(this.getActivity(),
                 android.R.layout.simple_spinner_dropdown_item,
                 FragmentList.books);
         spinner2.setAdapter(bookAdapter);

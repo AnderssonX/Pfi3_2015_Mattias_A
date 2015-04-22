@@ -22,7 +22,7 @@ import java.util.ArrayList;
  * A simple {@link android.app.Fragment} subclass.
  */
 public class FragmentList extends Fragment {
-    public static ArrayList<Book> books = new ArrayList<Book>();
+    public static ArrayList<Planet> books = new ArrayList<Planet>();
 public static int currentBook;
     //This method comes first so lets create the books here
     @Override
@@ -30,15 +30,15 @@ public static int currentBook;
         super.onCreate(savedInstanceState);
         books.clear();
         Drawable d = getResources().getDrawable(R.drawable.mars);
-        books.add(new Book("Mars","Mars är den fjärde planeten från solen och solsystemets näst minsta planet. Den har fått sitt namn efter den romerska krigsguden Mars och kallas ibland för \"den röda planeten\" på grund av sitt rödaktiga utseende. Den röda färgen beror på stora mängder järnoxid (rost) som finns fördelat över ytan och i atmosfären. Mars är en av de fyra stenplaneterna och har en tunn atmosfär som till största delen består av koldioxid. Ytan är täckt av kratrar av olika storlekar likt månen, men Mars har precis som jorden även många vulkaner, dalgångar, vidsträckta slätter och iskalotter vid polerna.", "3376", "227", d));
+        books.add(new Planet("Mars","Mars är den fjärde planeten från solen och solsystemets näst minsta planet. Den har fått sitt namn efter den romerska krigsguden Mars och kallas ibland för \"den röda planeten\" på grund av sitt rödaktiga utseende. Den röda färgen beror på stora mängder järnoxid (rost) som finns fördelat över ytan och i atmosfären. Mars är en av de fyra stenplaneterna och har en tunn atmosfär som till största delen består av koldioxid. Ytan är täckt av kratrar av olika storlekar likt månen, men Mars har precis som jorden även många vulkaner, dalgångar, vidsträckta slätter och iskalotter vid polerna.", "3376", "227", d));
         d = getResources().getDrawable(R.drawable.mars);
-        books.add(new Book("Mars","Mars är en planet", "3376", "227", d));
+        books.add(new Planet("Mars","Mars är en planet", "3376", "227", d));
         d = getResources().getDrawable(R.drawable.mars);
-        books.add(new Book("Mars","Mars är en planet", "3376", "227", d));
+        books.add(new Planet("Mars","Mars är en planet", "3376", "227", d));
         d = getResources().getDrawable(R.drawable.mars);
-        books.add(new Book("Mars","Mars är en planet", "3376", "227", d));
+        books.add(new Planet("Mars","Mars är en planet", "3376", "227", d));
         d = getResources().getDrawable(R.drawable.mars);
-        books.add(new Book("Mars","Mars är en planet", "3376", "227", d));
+        books.add(new Planet("Mars","Mars är en planet", "3376", "227", d));
     }
 
     @Override

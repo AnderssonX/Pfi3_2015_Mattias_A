@@ -1,7 +1,6 @@
 package com.example.mattias.assignment4;
 
 import android.app.Fragment;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,10 +34,6 @@ public class FragmentPlanet extends Fragment {
             planetStats.setText(fl.getStats());
             TextView planetFacts = (TextView) v.findViewById(R.id.textViewInfo);
             planetFacts.setText(fl.getFacts());
-
-            String fontpath = "fonts/Roboto-Regular.ttf";
-            Typeface font = Typeface.createFromAsset(getActivity().getAssets(), fontpath);
-            //planetName.setTypeface(font);
             return v;
         }
 

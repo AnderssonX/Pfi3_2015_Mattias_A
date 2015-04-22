@@ -14,11 +14,11 @@ import java.util.ArrayList;
 /**
  * Created by Mattias on 15-04-22.
  */
-public class MyListAdapter extends ArrayAdapter<Book> {
-    ArrayList<Book> booksList;
+public class MyListAdapter extends ArrayAdapter<Planet> {
+    ArrayList<Planet> booksList;
     Context c;
 
-    public MyListAdapter(Context context, ArrayList<Book> booksList) {
+    public MyListAdapter(Context context, ArrayList<Planet> booksList) {
         super(context, 0, booksList);
         this.booksList = booksList;
         this.c = context;
@@ -31,7 +31,7 @@ public class MyListAdapter extends ArrayAdapter<Book> {
         Log.i("MyListAdapter", "Called for position: " + position);
         LayoutInflater inflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         convertView = inflater.inflate(R.layout.list_item,null);
-        Book b = booksList.get(position);
+        Planet b = booksList.get(position);
         TextView tv = (TextView) convertView.findViewById(R.id.tv_title);
         ImageView iv = (ImageView) convertView.findViewById(R.id.iv_bookcover);
         tv.setText(b.getName());

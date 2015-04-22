@@ -7,14 +7,14 @@ import java.io.Serializable;
 /**
  * Created by Mattias on 15-04-22.
  */
-public class Book implements Serializable {
+public class Planet implements Serializable {
     String name;
     String radie;
     String medeltemp;
     String info;
     Drawable image;
 
-    public Book(String name, String info, String radie, String medeltemp, Drawable image) {
+    public Planet(String name, String info, String radie, String medeltemp, Drawable image) {
         this.name = name;
         this.info = info;
         this.radie = radie;
