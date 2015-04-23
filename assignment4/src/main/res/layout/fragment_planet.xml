@@ -50,20 +50,22 @@ android:textSize="45sp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
-        android:background="#ff0e000d"
+android:scrollbarStyle="insideOverlay"
+        android:fadeScrollbars="true"
         android:id="@+id/scrollView"
         android:paddingBottom="16dp"
         android:layout_below="@id/planetImage"
-        >
+        android:background="#44000000"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
         <TextView
             android:layout_width="fill_parent"
 
             android:text="Info"
             android:layout_height="fill_parent"
             android:id="@+id/textViewInfo"
-            android:textSize="22sp"
+            android:textSize="16sp"
             android:textColor="#FFFFFFFF"
-            android:background="#ff0e000d" />
+            android:background="#44000000" />
     </ScrollView>
 </RelativeLayout>
 

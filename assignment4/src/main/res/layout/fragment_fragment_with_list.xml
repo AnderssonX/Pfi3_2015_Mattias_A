@@ -16,5 +16,5 @@
         android:id="@+id/gridView"
         android:layout_gravity="start"
         android:choiceMode="singleChoice"
-        android:background="@android:color/black" />
+        android:background="#44000000" />
 </FrameLayout>

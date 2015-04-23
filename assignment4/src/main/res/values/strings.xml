@@ -6,4 +6,43 @@
     <string name="action_spinner">Spinner</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="mars">Mars</string>
+    <string name="neptunus">Neptunus</string>
+    <string name="venus">Venus</string>
+    <string name="jorden">Jorden</string>
+    <string name="jupiter">Jupiter</string>
+    <string name="uranus">Uranus</string>
+    <string name="saturnus">Saturnus</string>
+    <string name="merkurius">Merkurius</string>
+
+        <string name="marsInfo">Mars (symbol: Mars symbol.svg) är den fjärde planeten från solen och solsystemets näst minsta planet. Den har fått sitt namn efter den romerska krigsguden Mars och kallas ibland för "den röda planeten" på grund av sitt rödaktiga utseende. Den röda färgen beror på stora mängder järnoxid (rost) som finns fördelat över ytan och i atmosfären. Mars är en av de fyra stenplaneterna och har en tunn atmosfär som till största delen består av koldioxid. Ytan är täckt av kratrar av olika storlekar likt månen, men Mars har precis som jorden även många vulkaner, dalgångar, vidsträckta slätter och iskalotter vid polerna.</string>
+        <string name="neptunusInfo">Neptunus (symbol: ♆) är den åttonde planeten från solen. Neptunus är en så kallad gasjätte, och har fått sitt namn efter havsguden Neptunus i romersk mytologi. Den 24 augusti 2006, då den Internationella astronomiska unionen beslutade att Pluto inte längre var en planet, blev Neptunus den yttersta planeten i solsystemet. Neptunus var dock den yttersta planeten i solsystemet även mellan åren 1979 och 1999, eftersom Pluto då låg närmare solen än Neptunus.Neptunus är mycket lik Uranus, både i fråga om atmosfär och kemisk sammansättning – båda består huvudsakligen av väte, helium och metan. Neptunus tar emot mindre än hälften så mycket solljus som Uranus, men den värme som härstammar från dess inre gör Neptunus något varmare än Uranus.[9]</string>
+        <string name="venusInfo">Venus (symbol: ♀) är den andra planeten i solsystemet från solen räknat och den är nästan lika stor som jorden. Då Venus rör sig runt sin egen axel i motsatt riktning mot rörelsen runt solen så kan man säga att den roterar baklänges, vilket endast Venus och Uranus gör. Venus är den enda planeten i hela solsystemet vars dygn är längre än dess år eftersom Venus snurrar ett varv runt solen på 225 dygn men behöver hela 243 dygn för att rotera ett enda varv runt sin egen axel. Liksom de övriga sedan antiken i västerlandet kända planeterna (de ut till och med Saturnus) namngavs den av grekerna, varifrån vårt namn härstammar (Grekerna säger även att Venus och Uranus är besläktade). Den fick namn efter deras kärleksgudinna Afrodite, och liksom för övriga planeter togs systemet över av romarna vars namn sedan ärvts. Deras kärleksgudinna hette Venus. Planeten har varit känd långt före antiken och haft olika namn i olika kulturer. Eftersom den främst ses i samband med solnedgång och soluppgång kallas den för aftonstjärnan respektive morgonstjärnan på flera olika språk. Venus är också den himlakropp som syns bäst på himlavalvet, efter solen och månen.</string>
+        <string name="jordenInfo">Jorden är den tredje planeten från solen och den största av de så kallade stenplaneterna i solsystemet. Jorden är hemvist för alla kända levande varelser, inklusive människan. Dess latinska namn, Tellus eller Terra används ibland om den, och astronomer betecknar den ibland med symbolen ⊕. Jorden har en naturlig satellit kallad månen, eller Luna på latin.</string>
+        <string name="jupiterInfo">Jupiter (symbol: Jupiter symbol.svg) är den femte planeten från solen och är med stor marginal solsystemets största planet. Dess massa är 2,5 gånger så stor som alla de andra planeternas sammanlagda massa. Planeten är en så kallad gasjätte och man är inte säker på om planeten ens har en fast kärna. Planeten har fått sitt namn efter den största guden inom romerska mytologin, Jupiter.[8] Även om namnet är romerskt har planeten varit känd, under andra namn, sedan urminnes tider (till exempel Δίας/Dias på grekiska).</string>
+        <string name="uranusInfo">Uranus (symbol: ♅ eller Uranus symbol.svg) är den sjunde planeten från solen. Uranus är en av solsystemets fyra jätteplaneter - Jupiter, Saturnus, Uranus och Neptunus - och är av ungefär samma storlek som Neptunus. Planetens diameter är ungefär 50 000 km (ca 4 gånger så stor som jordens) och massan cirka 14,5 jordmassor. Planetens rotationsaxel har en lutning på hela 98 grader, vilket innebär att planeten snarast ”rullar” genom rymden på sin bana runt solen. Det tar 84 år för Uranus att fullborda ett varv runt solen. På grund av Uranus lutning ger det mycket märkliga dygn och år. Under ungefär halva banan får nordpolen hela tiden solljus och det är sommar norr om ekvatorn. Sommaren följs av en 42 år lång vinter med norra halvklotet ständigt i natt eftersom det är vänt bort från solen. \nDygnets längd kan vara olika beroende på var på Uranus man befinner sig. Vid polerna varar ett dygn från soluppgång till soluppgång i 42 jordår alltså 1/2 uranusår. Men i närheten av ekvatorn mätt från soluppgång till soluppgång är ett dygn 17 timmar.</string>
+        <string name="saturnusInfo">Saturnus (symbol: Saturn symbol.svg) är den sjätte planeten från solen och den näst största i solsystemet. Den är en gasjätte, känd sedan förhistorisk tid. Galileo Galilei var den första att observera den genom ett teleskop år 1610. Han såg planeten när ringarnas läge fick planeten att se ut som tre planeter i en klump, vilket gjorde dåtidens forskare mycket förbryllade. Saturnus har nittiofem gånger så stor massa som jorden och har nio gånger så stor diameter. Saturnus och de övriga gasjättarna måste ha bildats på ett annat sätt än det inre solsystemet. Man vet dock inte hur det gick till. I likhet med alla de andra planeterna bildades Saturnus av rester från det gasmoln och det rymdstoft som givit upphov till solen. Det finns två teorier om hur gasjättarna bildades. Den ena är att partiklar av is och stoft kolliderade och slogs ihop till de yttre planeternas fasta kärnor, som sedan drog till sig gaser genom sin tyngdkraft. Den andra är att den skiva av rymdgrus som omgav den unga solen sprack upp i mindre klot av gas och stoft, vilka sedan drogs samman till planeter. Under miljontals år kolliderade fasta partiklar med varandra och byggde därigenom upp de stora klumpar av sten och metall som kallas planetesimaler. De blev tillräckligt stora för att deras egen tyngdkraft skulle dra till sig mer materia och ibland kolliderade de och slogs ihop med varandra. Enligt en teori bildades Saturnus kärna av stoftpartiklar som samlades i centrum.</string>
+        <string name="merkuriusInfo">Merkurius (symbol: Mercury symbol.svg) är den innersta och minsta planeten i solsystemet och har en omloppstid runt solen på 88 dygn. På grund av sin närhet till solen är den svår att observera från jorden och kan bara ses i gryning eller skymning, men Merkurius har ändå varit känd i åtminstone 5 000 år. Planeten saknar, liksom Venus, naturliga satelliter (månar). Man vet relativt lite om Merkurius. Mycket av informationen om planeten samlades in av den första rymdsonden som varit i närheten, Mariner 10 (1974–1976). Den 14 januari 2008 passerade dock den betydligt mer avancerade sonden MESSENGER planeten. Ytterligare två passager har gjorts. Den 18 mars 2011 lade sig MESSENGER i bana runt planeten och den 4 april påbörjade sonden officiellt att samla in data.\n Ytan är ganska lik månens då den har relativt många kratrar. Merkurius har ingen atmosfär att tala om, och yttemperaturen varierar mellan –173 grader Celsius i botten av kratrarna vid polerna och +427 grader Celsius på de varmaste ställena på solsidan.\n\nPlanetens namn kommer från romarna, som namngav den efter den romerske guden Mercurius. Den astronomiska symbolen för Merkurius är en stiliserad kaducé.</string>
+
+
+
+      <string name="marsRadius">2 439,7 ± 2,0 km</string>
+        <string name="neptunusRadius">24 249,5 ± 4,0 km</string>
+    <string name="venusRadius">1 539,2 ± 1,0 km</string>
+    <string name="jordenRadius">32 459,5 ± 3,0 km</string>
+    <string name="jupiterRadius">1 249,2 ± 3,0 km</string>
+    <string name="uranusRadius">1 249,2 ± 3,0 km</string>
+    <string name="saturnusRadius">2 239,2 ± 1,0 km</string>
+    <string name="merkuriusRadius">5 239,2 ± 2,0 km</string>
+
+    <string name="marsT">340 k</string>
+    <string name="neptunusT">65 k</string>
+    <string name="venusT">123 k</string>
+    <string name="jordenT">52 k</string>
+    <string name="uranusT">5 k</string>
+    <string name="saturnusT">256 k</string>
+    <string name="merkuriusT">462 k</string>
+    <string name="jupiterT">122 k</string>
+
+
 </resources>
