@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -22,12 +23,18 @@ import java.util.ArrayList;
  * A simple {@link android.app.Fragment} subclass.
  */
 public class FragmentList extends Fragment {
+
+ // Create an arraylist of planets.
+
     public static ArrayList<Planet> planets = new ArrayList<Planet>();
 public static int currentPlanet;
     //This method comes first so lets create the books here
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Clear arraylist and add desired planets, giving them a the following values; "name", "radius" and "avarage temperature" and a drawable image
+
         planets.clear();
         Drawable d = getResources().getDrawable(R.drawable.mars);
         planets.add(new Planet("Mars","Mars är den fjärde planeten från solen och solsystemets näst minsta planet. Den har fått sitt namn efter den romerska krigsguden Mars och kallas ibland för \"den röda planeten\" på grund av sitt rödaktiga utseende. Den röda färgen beror på stora mängder järnoxid (rost) som finns fördelat över ytan och i atmosfären. Mars är en av de fyra stenplaneterna och har en tunn atmosfär som till största delen består av koldioxid. Ytan är täckt av kratrar av olika storlekar likt månen, men Mars har precis som jorden även många vulkaner, dalgångar, vidsträckta slätter och iskalotter vid polerna. Under stora delar av Mars historia skedde långvariga vulkanutbrott vilka bland annat skapade Olympus Mons, solsystemets största berg. De stora utbrotten har sedan länge upphört, men på ett fåtal platser bedöms mindre utbrott ha skett för endast ett par miljoner år sedan. Då detta är en kort period i ett geologiskt perspektiv förmodas planeten kunna ha en viss kvarvarande geologisk aktivitet än idag. Till skillnad från jorden har dock Mars ingen aktiv plattektonik och inget globalt magnetfält.", "3376 ± 0,1 ", "227.", d));
@@ -55,28 +62,22 @@ public static int currentPlanet;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_fragment_with_list, container, false);
-        Log.i("FragmentWithList", "NumberOfBooks: " + planets.size());
+        Log.i("FragmentList", "Number of planets added: " + planets.size());
         MyListAdapter la = new MyListAdapter(getActivity(),planets);
         GridView lv = (GridView) v.findViewById(R.id.gridView);
         lv.setAdapter(la);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.i("FragmentWithList", "Clicked on position: " + position);
-                // ORIGINAL CODE FROM EXAMPLE
+                currentPlanet = position;
 
-           /*      FragmentManager fm = getFragmentManager();
-                FragmentDialog fd = new FragmentDialog();
-                Bundle b = new Bundle();
-                b.putSerializable("book",books.get(position));
-                fd.setArguments(b);
-                fd.show(fm,"Dialog"); */
+                // Log and toast on list interaction
+                Log.i("FragmentList", "Clicked on position: " + position +"/ " + planets.get(position).getName());
+                //display in short period of time
+                Toast.makeText(getActivity(), planets.get(position).getName(),
+                        Toast.LENGTH_SHORT).show();
 
-currentPlanet = position;
-                Bundle b = new Bundle();
-                b.putSerializable("book",planets.get(position));
-                FragmentPlanet fp = new FragmentPlanet();
-                fp.setArguments(b);
+                // Fragment transaction on list interaction
 
                 FragmentManager fm = getFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
@@ -90,6 +91,8 @@ currentPlanet = position;
         });
         return v;
     }
+
+    // Methods to use in order to get desired info for the fragment_planet fragment
 
     public String getName(){
         return planets.get(currentPlanet).getName();
