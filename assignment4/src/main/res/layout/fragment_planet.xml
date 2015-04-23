@@ -9,11 +9,19 @@
     android:paddingRight="16dp">
 
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/black">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/mars"
+        android:id="@+id/planetImage"
+        android:layout_weight="1"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,40 +32,41 @@ android:orientation="horizontal"
 
 android:textSize="45sp"
         android:textStyle="bold"
-        android:textColor="#ffffffff" />
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-
-android:layout_gravity="right"
-    android:src="@drawable/mars"
-    android:id="@+id/planetImage"
-    android:layout_weight="0.1"/>
-</LinearLayout>
-
-<LinearLayout
-android:orientation="vertical"
-android:layout_width="fill_parent"
-android:layout_height="fill_parent"
-android:background="#ffcc5c4b">
-
+        android:textColor="#ffffffff"
+        />
     <TextView
         android:layout_width="fill_parent"
         android:text="Stats"
+        android:layout_above="@id/scrollView"
+
         android:layout_height="wrap_content"
         android:id="@+id/textViewStats"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="italic"
         android:textColor="#ffffffff"
-        android:background="@android:color/black" />
-    <TextView
+        android:background="#99000000" />
+
+    <ScrollView
         android:layout_width="fill_parent"
-        android:text="Info"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:paddingTop="8dp"
-        android:id="@+id/textViewInfo"
-        android:textSize="16sp"
-        android:textColor="#FFFFFFFF"
-        android:background="#ff0e000d" />
+        android:background="#ff0e000d"
+        android:id="@+id/scrollView"
+        android:layout_below="@id/planetImage"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+
+            android:text="Info"
+            android:layout_height="fill_parent"
+            android:id="@+id/textViewInfo"
+            android:textSize="22sp"
+            android:textColor="#FFFFFFFF"
+            android:background="#ff0e000d" />
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
 </LinearLayout>
-    </LinearLayout>
