@@ -20,17 +20,17 @@ public class FragmentInfoDialog extends FragmentDialog implements View.OnClickLi
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment__dialog, container, false);
-        // Book b = (Book) getArguments().getSerializable("book");
+
         TextView tv_title = (TextView) v.findViewById(R.id.tv_dialog_title);
-        // tv_title.setText(b.getInfo());
+
         TextView tv_description = (TextView) v.findViewById(R.id.tv_dialog_description);
-        // tv_description.setText(b.getSummary());
+tv_description.setText(R.string.presentation);
         ImageView iv = (ImageView) v.findViewById(R.id.iv_dialog);
         v.setOnClickListener(this);
         tv_description.setOnClickListener(this);
         iv.setOnClickListener(this);
         tv_title.setOnClickListener(this);
-        tv_title.setText("Balls!!");
+        tv_title.setText("Mattias Andersson");
         return v;
     }
 

@@ -26,6 +26,7 @@ public class FragmentPlanet extends Fragment {
                                  Bundle savedInstanceState) {
             // Inflate the layout for this fragment
             View v;
+
             v = inflater.inflate(R.layout.fragment_planet, container, false);
             TextView planetName = (TextView) v.findViewById(R.id.textViewNamn);
     //        Book b = (Book) getArguments().getSerializable("book");
